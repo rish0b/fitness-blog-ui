@@ -1,0 +1,29 @@
+<div class="post-line">
+
+    {{ $dateFormat := "Jan 2006" }}
+    {{ with .Site.Params.listDateFormat }}
+    {{ $dateFormat = . }}
+    {{ end }}
+
+    <div style="display: flex;">
+        <img class="line-thumbnail" src="/images/{{ path.Base .File.Dir }}/{{ .File.BaseFileName }}/thumbnail.png">
+        <div>
+            <p class="line-title">
+                {{ if .Params.mediumLink }}
+                    <a href="{{ .Params.mediumLink }}" target="_blank">
+                        {{ .Title }}
+                    </a>
+                {{ else }}
+                    <a href="{{ .RelPermalink }}">
+                        {{ .Title }}
+                    </a>
+                {{ end }}
+            </p>
+
+            {{ if .Site.Params.listSummaries }}
+            <p class="line-summary">{{ .Date.Format $dateFormat }}</p>
+            {{ end }}
+            <p class="line-summary">{{ .Summary }}</p>
+        </div>
+    </div>
+</div>

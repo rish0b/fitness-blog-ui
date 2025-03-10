@@ -1,0 +1,83 @@
+baseURL = 'https://rishab-r.com/'
+languageCode = 'en-us'
+title = 'jacked and stacked'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "A fitness blog."
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroContent = """
+📍 **Austin, TX** \n
+**25 yo Natural Lifter**\n
+My opinions on fitness, mindset, and motivation.
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Recents'
+homeCollection = 'recents'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = 'January 2006'
+
+# Breadcrumbs
+breadcrumbs = false
+
+# Social icons
+[[params.social]]
+name = "instagram"
+url = "https://www.instagram.com/rish0b/"
+
+[[params.social]]
+name = "substack"
+url = ""
+
+
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "recents"
+url = "/recents"
+
+[[params.menu]]
+name = "programs"
+url = "/programs"
+
+# [[params.menu]]
+# name = "me"
+# url = "/me"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
