@@ -1,6 +1,9 @@
-baseURL = 'https://rish0b.github.io/fitness-blog-ui/'
+baseURL = 'https://rishab-r.com/'
 languageCode = 'en-us'
 title = 'jacked and stacked'
+
+relativeURLs = true
+canonifyURLs = true
 
 [taxonomies]
 tag = 'tags'

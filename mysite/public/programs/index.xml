@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programs on jacked and stacked</title>
-    <link>http://localhost:1313/fitness-blog-ui/programs/</link>
+    <link>http://localhost:1313/programs/</link>
     <description>Recent content in Programs on jacked and stacked</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/fitness-blog-ui/programs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/programs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
