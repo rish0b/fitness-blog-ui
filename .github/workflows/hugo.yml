@@ -56,7 +56,7 @@ jobs:
           hugo \
             --config=mysite/hugo.toml \
             --minify \
-            --baseURL "https://rish0b.github.io/fitness-blog-ui"
+            --baseURL "https://jackedandstacked.com/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
