@@ -27,4 +27,21 @@
 
     {{ end }}
 
+    {{ if (.Param "showBackToHome") }}
+
+    <button onclick="goBack()" class="back-button">← Back</button>
+
+    <script>
+    function goBack() {
+        if (document.referrer) {
+            window.history.back(); // Go to previous page if available
+        } else {
+            window.location.href = '/'; // Fallback: Go to home
+        }
+    }
+    </script>
+    
+
+    {{ end }}
+
 </div>

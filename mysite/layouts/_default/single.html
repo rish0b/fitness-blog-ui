@@ -20,6 +20,7 @@
     {{/* Reading Time */}}
 
     <p class="single-readtime">
+      🗓️
       {{ with .Date }}
       {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := . | time.Format "January 2006" }}
@@ -79,14 +80,14 @@
   </script>
   {{ end }}
 
-
+<!--
   {{/* Next prev controls */}}
 
   {{ if not (.Param "hidePagination") }}
   {{ partial "pagination-single.html" . }}
   {{ end }}
 
-  {{/* Back to top */}}
+  {{/* Back to top */}}-->
 
   {{ if not (.Param "hideBackToTop") }}
   <div class="back-to-top">

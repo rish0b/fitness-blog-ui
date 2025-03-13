@@ -214,10 +214,13 @@ footer a {
 /* Posts list  */
 
 .post-line {
-  margin-bottom: 18px;
   display: flex;
   align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light grayish-white line */
+  padding-bottom: 24px; /* Adds spacing between posts */
+  margin-bottom: 24px; /* Ensures spacing before the next post */
 }
+
 
 .tag-line {
   margin-bottom: .5rem;
@@ -242,16 +245,21 @@ footer a {
 }
 
 .line-thumbnail {
-  height: 108px; 
-  width: 108px; 
+  min-height: 107px; 
+  min-width: 160px; 
+  max-height: 107px;
+  max-width: 160px;
+
+  align-self: center;
   object-fit:cover; 
-  margin-right: 18px; 
-  /*border: solid 2px var(--content-primary);*/
+  margin-left: auto;
+  border: solid 1px black;
 }
 
 .line-title {
   font-weight: 700;
   margin: 0;
+  font-size: 24px;
 }
 
 .line-title a {
@@ -267,7 +275,7 @@ footer a {
 }
 
 .line-summary {
-  font-size: small;
+  font-size: 16px;
   margin-top: .2rem !important;
   /* font-style: italic; */
   color: var(--content-secondary);

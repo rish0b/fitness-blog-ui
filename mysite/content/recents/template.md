@@ -5,6 +5,9 @@ date: 2025-03-10
 autonumber: true
 math: true
 hideBackToTop: true
+hideHeader: true
+showBackToHome: true
+
 draft: true
 ---
 <a href="URL Link" target="_blank">

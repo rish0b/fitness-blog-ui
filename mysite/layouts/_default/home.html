@@ -26,7 +26,7 @@
 {{/* Social Icons */}}
 
 {{ with site.Params.social }}
-<div class="social-icons">
+<!-- <div class="social-icons">
     {{- range . }}
     <a href="{{ trim .url " " | safeURL }}" target="_blank"
         rel="noopener noreferrer me"
@@ -34,7 +34,7 @@
         {{ partial "svg.html" . }}
     </a>
     {{- end }}
-</div>
+</div> -->
 {{ end }}
 
 {{/* Collection Section */}}
@@ -44,6 +44,7 @@
 <div class="list-container">
     {{ with .Site.Params.homeCollectionTitle}}
     <h2> Recents </h2>
+    <hr >
     {{ end }}
 
     {{ $pages := where .Site.RegularPages "Section" "in" (slice "recents") }}

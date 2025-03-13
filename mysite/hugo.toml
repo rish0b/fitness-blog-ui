@@ -23,8 +23,8 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroContent = """
 📍 **Austin, TX** \n
-**25 yo Natural Lifter**\n
-My opinions on fitness, mindset, and motivation.
+🏋🏾 25 y/o Natural Lifter\n
+📝 My opinions on fitness, mindset, and motivation.
 """
 
 # Collection to display on home

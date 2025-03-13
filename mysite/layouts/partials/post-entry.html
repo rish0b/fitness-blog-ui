@@ -5,9 +5,8 @@
     {{ $dateFormat = . }}
     {{ end }}
 
-    <div style="display: flex;">
-        <img class="line-thumbnail" src="/images/{{ path.Base .File.Dir }}/{{ .File.BaseFileName }}/thumbnail.png">
-        <div>
+    <div style="display: flex; width: 100%; ">
+        <div style="align-self: center; margin-right: 48px;">
             <p class="line-title">
                 {{ if .Params.mediumLink }}
                     <a href="{{ .Params.mediumLink }}" target="_blank">
@@ -21,9 +20,10 @@
             </p>
 
             {{ if .Site.Params.listSummaries }}
-            <p class="line-summary">{{ .Date.Format $dateFormat }}</p>
+            <p class="line-summary" style="font-size: 12px;">{{ .Date.Format $dateFormat }}</p>
             {{ end }}
             <p class="line-summary">{{ .Summary }}</p>
         </div>
+        <img class="line-thumbnail" src="/images/{{ path.Base .File.Dir }}/{{ .File.BaseFileName }}/thumbnail.png">
     </div>
 </div>
